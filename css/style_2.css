@@ -279,7 +279,6 @@
 
 .card-content:hover{
   background-color: #38b6ff;
-  color: white;
   cursor: pointer;
   transform: scale(1.03);
   transition: all 1s ease;
