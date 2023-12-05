@@ -264,20 +264,14 @@
 
 }
 
-.card-image{
-
-    background:red;
-    height: 190px;
-    margin-bottom: 15px;
-    background-size: cover, contain;
-    object-fit:fill;
-    /* border-radius: 50px 50px 0 0; */
-}
-
 .design-img-1{
 
     background-image: url("/css/breezy-projects-page.png");
     background-size: contain, no-repeat;
+    height: 190px;
+    margin-bottom: 15px;
+    background-size: cover, contain;
+    object-fit:fill;
     
 }
 
@@ -285,6 +279,10 @@
 
     background-image: url("/css/satoshi-projects-page-2.png");
     background-color: white;
+    height: 190px;
+    margin-bottom: 15px;
+    background-size: cover, contain;
+    object-fit:fill;
     
 
    
@@ -293,13 +291,20 @@
 .design-img-3{
 
     background-image: url("/css/triva-projects-page.png");
+    height: 190px;
+    margin-bottom: 15px;
+    background-size: cover, contain;
+    object-fit:fill;
     
 }
 
 .design-img-4{
   background-image: url("/css/recidivism-projects-page-3.png");
-
   background-size: cover;
+  height: 190px;
+  margin-bottom: 15px;
+  background-size: cover, contain;
+  object-fit:fill;
 
 
 }
@@ -307,22 +312,25 @@
 .design-img-5{
   background-image: url("/css/blom-projects-page-3.png");
   background-size: cover;
+  height: 190px;
+  margin-bottom: 15px;
+  background-size: cover, contain;
+  object-fit:fill;
   
 
 }
 
 .design-img-6{
   background-image: url("/css/nuance-projects-page.jpg");
+  background-size: cover;
+  height: 190px;
+  margin-bottom: 15px;
+  background-size: cover, contain;
+  object-fit:fill;
+  
  
 
 }
-
-.design-img-7{
-  background-image: url("/image/projects-page-images/bygeorgehr-projects-page.png");
- 
-
-}
-
 
 .project-title{
 
