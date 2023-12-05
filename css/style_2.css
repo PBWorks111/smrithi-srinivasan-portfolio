@@ -276,14 +276,14 @@
 
 .design-img-1{
 
-    background-image: url("/breezy-projects-page.png");
+    background-image: url("/css/breezy-projects-page.png");
     background-size: contain, no-repeat;
     
 }
 
 .design-img-2{
 
-    background-image: url("/satoshi-projects-page-2.png");
+    background-image: url("/css/satoshi-projects-page-2.png");
     background-color: white;
     
 
@@ -292,12 +292,12 @@
 
 .design-img-3{
 
-    background-image: url("/triva-projects-page.png");
+    background-image: url("/css/triva-projects-page.png");
     
 }
 
 .design-img-4{
-  background-image: url("/recidivism-projects-page-3.png");
+  background-image: url("/css/recidivism-projects-page-3.png");
 
   background-size: cover;
 
@@ -305,14 +305,14 @@
 }
 
 .design-img-5{
-  background-image: url("/blom-projects-page-3.png");
+  background-image: url("/css/blom-projects-page-3.png");
   background-size: cover;
   
 
 }
 
 .design-img-6{
-  background-image: url("/nuance-projects-page.jpg");
+  background-image: url("/css/nuance-projects-page.jpg");
  
 
 }
