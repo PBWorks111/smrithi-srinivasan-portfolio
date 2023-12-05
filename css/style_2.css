@@ -266,7 +266,7 @@
 
 .design-img-1{
 
-    background-image: url("/css/breezy-projects-page.png");
+    background-image: url("/image/breezy-projects-page.png");
     background-size: contain, no-repeat;
     height: 190px;
     margin-bottom: 15px;
@@ -277,7 +277,7 @@
 
 .design-img-2{
 
-    background-image: url("/css/satoshi-projects-page-2.png");
+    background-image: url("/image/satoshi-projects-page-2.png");
     background-color: white;
     height: 190px;
     margin-bottom: 15px;
@@ -290,7 +290,7 @@
 
 .design-img-3{
 
-    background-image: url("/css/triva-projects-page.png");
+    background-image: url("/image/triva-projects-page.png");
     height: 190px;
     margin-bottom: 15px;
     background-size: cover, contain;
@@ -299,7 +299,7 @@
 }
 
 .design-img-4{
-  background-image: url("/css/recidivism-projects-page-3.png");
+  background-image: url("/image/recidivism-projects-page-3.png");
   background-size: cover;
   height: 190px;
   margin-bottom: 15px;
@@ -310,7 +310,7 @@
 }
 
 .design-img-5{
-  background-image: url("/css/blom-projects-page-3.png");
+  background-image: url("/image/blom-projects-page-3.png");
   background-size: cover;
   height: 190px;
   margin-bottom: 15px;
@@ -321,7 +321,7 @@
 }
 
 .design-img-6{
-  background-image: url("/css/nuance-projects-page.jpg");
+  background-image: url("/image/nuance-projects-page.jpg");
   background-size: cover;
   height: 190px;
   margin-bottom: 15px;
@@ -331,7 +331,6 @@
  
 
 }
-
 .project-title{
 
   text-align: center;
