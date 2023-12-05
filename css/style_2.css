@@ -254,7 +254,7 @@
 }
 
 .design-card:hover{
-    background-color: rgb(92, 119, 236);
+    background-color:#38b6ff;
     color: white;
     cursor: pointer;
     transform: scale(1.03);
