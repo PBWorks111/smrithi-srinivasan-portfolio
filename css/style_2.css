@@ -154,9 +154,8 @@ height: 120px;
 .banner-image{
 
   position: relative;
-  background: url(/image/home-page-banner.png) no-repeat center;
-  background-size: cover;
-  height: 500px;
+  object-fit: repeat;
+  height: 600px;
   overflow: hidden;
 }
 
