@@ -14,60 +14,36 @@
 
     <a href="#main" class="skip-to-main-content-link">Skip to main content</a>    
 
+        <!-- Navigation Bar and Overlay Menu -->
+        <nav>
+            <a href = "index.html"><img src = "image/logo.png" alt = "logo" class = "logo"></a> 
+             <span class = "span" onclick="openNav()">&#9776;</span>
+    
+         </nav>
+             
+          
+                <!-- Navigation Menu Code from W3 Schools, Not by Smrithi -->
+    
+         <div id="myNav" class="overlay">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             <div class="overlay-content">
+               <a href="./index.html">Home</a>
+               <a href="./index.html">Projects</a>
+               <a href="./UX_UI_Resume.pdf">Resume</a>
+             </div>
+           </div>
+                    
 
-  <!-- Navigation Bar -->
+        <!-- Intro Banner- Code from https://www.youtube.com/watch?v=ybORZSB_92k -->
 
-    <nav>
-        <ul>
-            <div class = "flex-container">
-            <li class="home-icon"> <a href="./index.html"><img src = "./image/logo.png" alt = "Smrithi Srinivasan S.S logo" style="width:70px;height:70px" class="home-logo"></a></li>
-            <li class="menu-item text-link"> <a href="./about_me.html">About Me</a></li>
-            <li class="menu-item text-link" > <a href="./UX_UI_Resume.pdf">Resume</a></li>
-            
-            <li class="menu-item"> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> </li>
+        <div class = "banner-image">
+            <div class ="banner-container">
+                <h1 class = "banner-title"><span>Smrithi Srinivasan</span></h1>
+                <div class = "banner-details"> Conversation and UX Designer </div>
             </div>
-        </ul>
-    </nav>
-  
-       <!-- The overlay -->
-    <div id="myNav" class="overlay">
-
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    
-        <!-- Overlay content -->
-        <div class="overlay-content">
-            <a href="./index.html">Home</a>
-            <a href="./about_me.html">About Me</a>
-            <a href="./UX_UI_Resume.pdf">Resume</a>
-            </div>
-        
-    
-    </div>
-    
-
-    <!-- Introduction Panel -->
-
-    <main id="main"></main>
-<div class = "banner-area">
-    <div class = "intro-panel background-image">
-    
-
-      
-            <div class = "intro-text">
-                Smrithi Srinivasan
-            </div>
-            <div class = "intro-subtext">
-                Conversation Designer and User Experience Designer
-            </div>
-      
-
-
-    </div>
-</div>
-    
-  
-    <!-- <-- Conversation Design Projects --> 
+        </div>
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+    <!-- <-- Design Projects --> 
     <!-- Code from https://www.youtube.com/watch?v=qXRYMdvq_Dc -->
    
 
@@ -83,7 +59,7 @@
         
            <a href ="new-breezy-project.html">
                 <div class ="card-content">
-                    <img src = "image/projects-page-images/breezy-projects-page.png" class = "card-img">
+                    <img src = "image/projects-page-images/breezy-project-banner.png" class = "card-img">
                     <h6 class = "card-title">UX Research for a To-Do List Chatbot</h6>
                     <p class = "card-details"> Traits AI</p>
                     
@@ -95,7 +71,7 @@
         
                 <a href ="new-nakamoto-project.html">
                      <div class ="card-content">
-                         <img src = "image/projects-page-images/satoshi-projects-page-2.png" class = "card-img">
+                         <img src = "image/projects-page-images/satoshi-project-banner.png" class = "card-img">
                          <h6 class = "card-title">Designing Satoshi Nakamoto</h6>
                          <p class = "card-details"> Traits AI</p>
                          
@@ -107,7 +83,7 @@
         
                     <a href ="new-triva-project.html">
                          <div class ="card-content">
-                             <img src = "image/projects-page-images/triva-projects-page.png" class = "card-img">
+                             <img src = "image/projects-page-images/triva-project-banner.png" class = "card-img">
                              <h6 class = "card-title">Designing Triva the Self Service Chatbot</h6>
                              <p class = "card-details"> Thomson Reuters</p>
                              
@@ -119,7 +95,7 @@
         
                         <a href ="new-recidivism-project.html">
                              <div class ="card-content">
-                                 <img src = "image/projects-page-images/recedivism-projects-page.png" class = "card-img">
+                                 <img src = "image/projects-page-images/recedivism-project0banner.png" class = "card-img">
                                  <h6 class = "card-title">Recidivism UX Design</h6>
                                  <p class = "card-details"> Umich Course</p>
                                  
@@ -134,7 +110,7 @@
                     
                             <a href ="new-breezy-project.html">
                                 <div class ="card-content">
-                                    <img src = "image/projects-page-images/blom-projects-page-4.jpg" class = "card-img card-img-blom">
+                                    <img src = "image/projects-page-images/blom-project-banner.png" class = "card-img card-img-blom">
                                     <h6 class = "card-title">COVID-19 Website Redesign</h6>
                                     <p class = "card-details"> Bløm Meadworks</p>
                                     
@@ -148,7 +124,7 @@
         
                                 <a href ="new-breezy-project.html">
                                      <div class ="card-content">
-                                         <img src = "image/projects-page-images/nuance-projects-page.jpg" class = "card-img">
+                                         <img src = "image/projects-page-images/nuance-project-banner.png" class = "card-img">
                                          <h6 class = "card-title">Product Redesign & User Interface Catalogue</h6>
                                          <p class = "card-details"> Nuance Communications</p>
                                          
@@ -171,8 +147,10 @@
 
 
             
+
+            
     
-    
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
     <!-- Footer -->
        <footer class = "footer">
             <a href = "https://www.linkedin.com/in/smrithi-srinivasan-57a334212" class = "footer-link linkedin_link"> Linkedin</a>
