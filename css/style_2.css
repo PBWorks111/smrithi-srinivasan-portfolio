@@ -78,79 +78,46 @@
 
 
 /* Navigation */
-
-nav{
-
-  display: block;
+.flex-container {
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+    padding: 0px, 20px;
+    align-content: center;
+    font-family: "Mukta", sans-serif;
+    text-align: bottom;
+   
+  }
   
-}
+/* Navigation- Home Icon */
+  .home-icon{
+    flex-grow: 10;
 
-.span{
+  }
 
-  font-size:40px;
-  border-radius:10px;
-  float: right;
-  padding: 20px;
-  cursor: pointer;
-}
+  .menu-item{
 
-.logo{
+    margin-right: 50px;
+    margin-top: 40px;
+    text-transform: capitalize;
+    
+  }
+  
+  .text-link-active{
 
-width: 120px;
-height: 120px;
-}
+    text-decoration: dotted;
+    color:white;
+    background-color: rgb(92, 119, 236);
+  }
 
-/* CSS for Sliding Menu from W3 Schools */
+  
+  @media only screen and (max-width: 700px) {
+    .text-link {
+      display: none;
+    }
+  }
 
-.overlay {
-  height: 100%;
-  width: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  background-color: white;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  transition: 0.7s;
-}
-
-.overlay-content {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  margin-top: auto;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: skyblue;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-
-  text-decoration: underline black 3px;
-  color: skyblue;
-
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 10px;
-  right: 55px;
-  font-size: 60px;
-}
-
-
-
-
-/* Intro banner image */
-
+/* Background Image */
 
 
 
@@ -280,7 +247,6 @@ height: 120px;
 
 
 
-
 /* Projects */
 
 .project-page-title{
@@ -296,6 +262,21 @@ height: 120px;
 
 /* Projects */
 
+.design-title{
+
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: "Mukta", "sans-serif";
+  /* font-size: 40px; */
+}
+
+.design-projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    
+}
 
 .card-container{
 
@@ -318,9 +299,8 @@ height: 120px;
 
 .card-img{
 
- object-fit: cover;
- height: 300px;
- width: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 
@@ -469,15 +449,6 @@ margin-bottom: 40px;
 
   font-size: 20px;
   text-align: center;
-  font-family: 'Mukta', sans-serif;
-  line-height: 5vh;
-}
-
-.second-subheading{
-
-  font-size: 15px;
-  text-align: center;
-  font-style: oblique;
   font-family: 'Mukta', sans-serif;
   line-height: 5vh;
 }
@@ -1175,8 +1146,3 @@ background-color: white;}
   color: white;
   text-align: center;
  }
-
-
-
-
-
