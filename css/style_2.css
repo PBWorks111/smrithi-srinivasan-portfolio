@@ -151,71 +151,134 @@ height: 120px;
 
 /* Intro banner image */
 
-.banner-image{
-
-  position: relative;
-  object-fit: repeat;
-  height: 600px;
-  overflow: hidden;
-}
 
 
-.banner-container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Mukta", "Sans-serif";
-}
 
-.banner-container h1{
+/* Introduction Panel */
 
-  margin: 0;
-  font-size: 70px;
+.intro-panel{
  
-}
-
-
-
-.banner-container h1 span{
-
-
-padding: 6px 14px;
-display: inline-block;
-background-color: white;
-
-}
+  width: 100vh;
+  height: 100vh;
  
-.banner-details{
 
-  margin: 20px;
-  display: block;
-  font-size: 26px;
-  background-color: white;
-}
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
 
-.banner-button{
+  margin: auto;
+  width: 50%;
+  font-family: "Mukta", "sans-serif";
+  color: white;
 
-  color: black;
-  padding: 10px 24px;
-  background: red;
-  text-decoration: none;
-  border-radius: 12px;
-  transition: 0.7s;
-  background-color: white;
-}
-
-
-.banner-button:hover{
-
-  opacity: 0.6;
-}
-
+ 
   
+}
+
+.banner-area{
+
+  animation-name: animate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+ 
+}
+
+@keyframes animate {
+
+  0%{ background: black;}
+  50%{ background: #5271ff;}
+  100% {background: #800080;}
+  
+}
+
+.intro-text{
+
+  text-align: center;
+ 
+  font-size: 45px;
+  font-family: "Mukta", "sans-serif";
+  text-align: center;
+
+ 
+  }
+
+
+  .intro-subtext{
+   
+    font-family: "Mukta", "sans-serif";
+    text-align: center;
+
+  }
+
+ 
+
+  @media only screen and (max-width: 700px) {
+
+    .intro-panel{
+ 
+      width: 100vh;
+      height: 100vh;
+     
+    
+     
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* text-align: center; */
+    
+      margin: auto;
+      width: 50%;
+      font-family: "Mukta", "sans-serif";
+      color: white;
+
+    
+     
+      
+    }
+
+    .banner-area{
+
+      animation-name: animate;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+     
+    }
+    
+    @keyframes animate {
+    
+      0%{ background: black;}
+      50%{ background: #5271ff;}
+      100% {background: #800080;}
+      
+    }
+    
+    
+    .intro-text{
+    
+      text-align: center;
+     
+      font-size: 45px;
+      font-family: "Mukta", "sans-serif";
+      text-align: center;
+    
+     
+      }
+    
+    
+      .intro-subtext{
+       
+        font-family: "Mukta", "sans-serif";
+        text-align: center;
+    
+      }
+  }
+
+
+
 
 
 /* Projects */
@@ -1112,6 +1175,8 @@ background-color: white;}
   color: white;
   text-align: center;
  }
+
+
 
 
 
