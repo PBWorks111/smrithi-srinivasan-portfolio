@@ -14,47 +14,60 @@
 
     <a href="#main" class="skip-to-main-content-link">Skip to main content</a>    
 
-        <!-- Navigation Bar and Overlay Menu -->
-        <nav>
-            <a href = "index.html"><img src = "image/logo.png" alt = "logo" class = "logo"></a> 
-             <span class = "span" onclick="openNav()">&#9776;</span>
-    
-         </nav>
-             
-          
-                <!-- Navigation Menu Code from W3 Schools, Not by Smrithi -->
-    
-         <div id="myNav" class="overlay">
-             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-             <div class="overlay-content">
-               <a href="./index.html">Home</a>
-               <a href="./index.html">Projects</a>
-               <a href="./UX_UI_Resume.pdf">Resume</a>
-             </div>
-           </div>
-                    
 
-        <!-- Intro Banner- Code from https://www.youtube.com/watch?v=ybORZSB_92k -->
+  <!-- Navigation Bar -->
+
+    <nav>
+        <ul>
+            <div class = "flex-container">
+            <li class="home-icon"> <a href="./index.html"><img src = "./image/logo.png" alt = "Smrithi Srinivasan S.S logo" style="width:70px;height:70px" class="home-logo"></a></li>
+            <li class="menu-item text-link"> <a href="./about_me.html">About Me</a></li>
+            <li class="menu-item text-link" > <a href="./UX_UI_Resume.pdf">Resume</a></li>
+            
+            <li class="menu-item"> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> </li>
+            </div>
+        </ul>
+    </nav>
+  
+       <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="./index.html">Home</a>
+            <a href="./about_me.html">About Me</a>
+            <a href="./UX_UI_Resume.pdf">Resume</a>
+            </div>
+        
+    
+    </div>
+    
+
+    <!-- Introduction Panel -->
+
+    <main id="main"></main>
+<div class = "banner-area">
+    <div class = "intro-panel background-image">
+    
 
       
-  
-        <div class = "intro-panel background-image">
-    
-
-       
-
             <div class = "intro-text">
                 Smrithi Srinivasan
             </div>
             <div class = "intro-subtext">
                 Conversation Designer and User Experience Designer
             </div>
+      
+
+
+    </div>
+</div>
     
-    
-    
-        </div>
-        ----------------------------------------------------------------------------------------------------------- -->
-    <!-- <-- Design Projects --> 
+  
+    <!-- <-- Conversation Design Projects --> 
     <!-- Code from https://www.youtube.com/watch?v=qXRYMdvq_Dc -->
    
 
@@ -119,7 +132,7 @@
                     
                         <div class= "card">
                     
-                            <a href ="new-breezy-project.html">
+                            <a href ="new-blom-meadworks.html">
                                 <div class ="card-content">
                                     <img src = "image/projects-page-images/blom-project-banner.png" class = "card-img card-img-blom">
                                     <h6 class = "card-title">COVID-19 Website Redesign</h6>
@@ -133,7 +146,7 @@
 
                             <div class= "card">
         
-                                <a href ="new-breezy-project.html">
+                                <a href ="new-nuance-project.html">
                                      <div class ="card-content">
                                          <img src = "image/projects-page-images/nuance-project-banner.png" class = "card-img">
                                          <h6 class = "card-title">Product Redesign & User Interface Catalogue</h6>
@@ -158,10 +171,8 @@
 
 
             
-
-            
     
-    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    
     <!-- Footer -->
        <footer class = "footer">
             <a href = "https://www.linkedin.com/in/smrithi-srinivasan-57a334212" class = "footer-link linkedin_link"> Linkedin</a>
