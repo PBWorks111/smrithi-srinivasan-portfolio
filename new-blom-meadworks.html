@@ -11,33 +11,29 @@
         <link rel="stylesheet" href="./css/htmlreset.css">
     </head>
     <body>
+        
+
+
+        <a href="#main" class="skip-to-main-content-link">Skip to main content</a>    
+
+        <!-- Navigation Bar and Overlay Menu -->
         <nav>
-            <ul>
-                <div class = "flex-container">
-                <li class="home-icon"> <a href="./index.html"><img src = "./image/logo.png" alt = "Smrithi Srinivasan S.S logo" style="width:70px;height:70px" class="home-logo"></a></li>
-                <li class="menu-item text-link"> <a href="./about_me.html">About Me</a></li>
-                <li class="menu-item text-link" > <a href="./UX_UI_Resume.pdf">Resume</a></li>
-                
-                <li class="menu-item"> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> </li>
-                </div>
-            </ul>
-        </nav>
-      
-           <!-- The overlay -->
-        <div id="myNav" class="overlay">
+            <a href = "index.html"><img src = "image/logo.png" alt = "logo" class = "logo"></a> 
+             <span class = "span" onclick="openNav()">&#9776;</span>
     
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        
-            <!-- Overlay content -->
-            <div class="overlay-content">
-                <a href="./index.html">Home</a>
-                <a href="./about_me.html">About Me</a>
-                <a href="./UX_UI_Resume.pdf">Resume</a>
-                </div>
-            
-        
-        </div>
+         </nav>
+             
+          
+                <!-- Navigation Menu Code from W3 Schools, Not by Smrithi -->
+    
+         <div id="myNav" class="overlay">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             <div class="overlay-content">
+               <a href="./index.html">Home</a>
+               <a href="./index.html">Projects</a>
+               <a href="./UX_UI_Resume.pdf">Resume</a>
+             </div>
+           </div>
          
 
           
@@ -91,10 +87,13 @@
           <section class = "project-context">
             <h5 class = "subheading">Project Context </h5>
              <div class = "paragraph-flex">
-             <p class = "paragraph">Our client had two website platforms they wanted to use. One website platform was used as their main website and another website was used for orders. At the time, they were in the process of integrating a new order platform and they were planning on getting rid of their old order platform. </p>
+             <p class = "paragraph">Our client had two website platforms: one as the main website and one for orders. They wanted us to redesign both websites to make them more user friendly and make them interconnected to each other. </p>
               </div>
               <div class = "paragraph-flex">
-                <p class = "paragraph">Our client wanted us to streamline and redesign both websites to make them more user friendly. They wanted to update their main website to add COVID-19 information and they also wanted us to get rid of any repetitive information that was already existent on the website. </p>
+                <p class = "paragraph">They wanted us to integrate a new order platform while they were transitioning away from their old order platform.  </p>
+                 </div>
+              <div class = "paragraph-flex">
+                <p class = "paragraph">Update their main website to add COVID-19 information delete existing, repetitive information on the website. </p>
             </div>
          </section>
          <hr style = "width: 50%; margin-left: auto; margin-right: auto;">
@@ -155,13 +154,29 @@
         <div class = "paragraph-flex">
             <div class = "paragraph"> After we decided on our project, my group member Team Member B, created a screener survey to help the group understand who the customers were, their experiences at the taproom and on the taproom's website. Here were some of the things we learned:</div>
         </div>
+        <h6 class = "second-subheading">What We Want to Understand:</h5> 
+            <!-- Look at satoshi-testing-the-chatbot-li css for this section -->
+
+            <div class = "bullet-flex">
+                <li class = "bullet">Help the group understand who the customers were, their experiences at the taproom and on the taproom's website. </li>
+            </div>
+        <h6 class = "second-subheading">Findings:</h5>    
          <!-- Look at satoshi-testing-the-chatbot-li css for this section -->
          <div class = "bullet-flex">
-            <li class = "bullet">Many customers resided in Ann Arbor and other cities within the state of Michigan(We already knew this from earlier datasets from our client, but it was good to reaffirm this piece of knowledge)</li>
+            <li class = "bullet">Many customers resided in Ann Arbor and other cities within the state of Michigan(We already knew this from earlier datasets from our client, but it was good to reaffirm this piece of knowledge) </li>
+        </div>
+        <div class = "bullet-flex">
             <li class = "bullet">Customers were between the ages of 21 to 30 and were predominantly female (We already knew this from earlier datasets from our client, but it was good to reaffirm this piece of knowledge)</li>
-            <li class = "bullet">Since COVID-19 begun, customers continued to interact with Bløm Meadworks for curbside pick-up and delivery options </li>
+        </div>
+        <div class = "bullet-flex">
+            <li class = "bullet">Since COVID-19 begun, customers continued to interact with Bløm Meadworks for curbside pick-up and delivery options</li>
+        </div>
+        <div class = "bullet-flex">
             <li class = "bullet">Most customers visited the website for any updates</li>
         </div>
+
+
+
     </section>
     <hr style = "width: 50%; margin-left: auto; margin-right: auto;">
 
@@ -169,10 +184,17 @@
      <section class = "user-interviews">
         <h5 class = "subheading">User Interviews</h5> 
         <div class = "paragraph-flex">
-            <div class = "paragraph"> Team Member A created our interview guide. From there, we were able to interview 8 different customers. The users were returning customers who often bought the company’s products. The interview questions focused on asking how users how they found the taproom, how often they used the website, and their spending habits before COVID-19 begun and during COVID-19. We also asked users to perform a usability test during the interviews as well. Some of the main findings were: </div>
+            <div class = "paragraph"> Team Member A created our interview guide. From there, we were able to interview 8 different customers. The users were returning customers who often bought the company’s products.  </div>
             
-            <!-- Look at satoshi-testing-the-chatbot-li css for this section -->
         </div>
+
+        <h6 class = "second-subheading">What We Want to Understand</h5> 
+            <div class = "paragraph-flex">
+                <div class = "paragraph"> The interview questions focused on asking how users how they found the taproom, how often they used the website, and their spending habits before COVID-19 and during COVID-19. We also asked users to perform a usability test during the interviews as well.  </div>
+            </div>
+            <!-- Look at satoshi-testing-the-chatbot-li css for this section -->
+       
+        <h6 class = "second-subheading">Findings:</h6> 
         <div class = "bullet-flex">
             <li class = "bullet">Customers were big fans of the product and the taproom itself </li>
             <li class = "bullet">Customers learned about the company through word-of-mouth or by walking past the physical building</li>
@@ -188,6 +210,8 @@
         <div class = "paragraph-flex">
             <div class = "paragraph"> After conducting all of the interviews, my team leader, Team Member A, helped create an affinity wall with several different categories. My entire team placed all of our findings into different categories. Some of the major takeaways were: </div>
         </div>
+        <br>
+        <h6 class = "second-subheading">Findings:</h6> 
         <!-- Look at satoshi-testing-the-chatbot-li css for this section -->
         <div class = "bullet-flex">
             <li class = "bullet">Customers knew how to navigate through some parts of the website to find certain things (like the menu)</li>
@@ -255,8 +279,23 @@
      <section class = "competitor-analysis">
         <h5 class = "subheading">Competitive Analysis</h5> 
         <div class = "paragraph-flex">
-            <div class = "paragraph"> After creating the journey maps, I did a competitive analysis of our client and four other establishments in the Ann Arbor area. I learned about each establishment's site map, their prevention methods against COVID-19, the location of for COVID-19 information and even general business practices.</div>            
+            <div class = "paragraph"> After creating the journey maps, I did a competitive analysis of our client and four other establishments in the Ann Arbor area. </div>            
         </div>
+
+        <h6 class = "second-subheading">What We Learned</h6> 
+           
+            <div class = "bullet-flex">
+                <li class = "bullet">Each establishment's site map </li>
+                <li class = "bullet">Their prevention methods against COVID-19</li>
+                <li class = "bullet">The location of for COVID-19 information </li>
+                <li class = "bullet">How users found the website</li>
+                <li class = "bullet">General business practices</li>
+            </div>
+
+        
+
+
+
         <div class = "table-flex">
         <table class = "table">
             <!-- Restaurants -->
@@ -317,8 +356,23 @@
     <section class = "google-analytics">
         <h5 class = "subheading">Google Analytics </h5>
         <div class = "paragraph-flex">
-            <div class = "paragraph"> I also had an opportunity to analyze the company's Google Analytics account to understand which pages people visited the most, how they navigated through the website, how much time they spent on each page, how users found the website, and common search terms as well. Here were some of the key findings.</div>          
+            <div class = "paragraph"> I also had an opportunity to analyze the company's Google Analytics account to understand previous website behavior.</div>          
         </div>
+        
+
+        <h6 class = "second-subheading">What We Learned</h6> 
+           
+        <div class = "bullet-flex">
+            <li class = "bullet">Which pages people visited the most  </li>
+            <li class = "bullet">How they navigated through the website</li>
+            <li class = "bullet">How much time they spent on each page </li>
+            <li class = "bullet">How users found the website</li>
+            <li class = "bullet">Most common search terms</li>
+        </div>
+
+        <br>
+        <h6 class = "second-subheading">Findings</h6>
+
         <div class = "bullet-flex">
             <li class = "bullet">Most website traffic came from mobile users, then desktop users and finally tablet users</li>
             <li class = "bullet">The most common landing pages users entered through were the home page, order page, and about us page</li>
@@ -346,6 +400,9 @@
             <div class = "paragraph-flex">
                 <div class = "paragraph">After analyzing all of the results, team member A created a site map that considered all of the following findings. A link to our site map can be found below. Here were some insights we uncovered:</div>  
             </div>
+
+            <br>
+            <h6 class = "second-subheading">Findings</h6>
             <div class = "site-map-flex">
                 <li class = "bullet"> The image on the home page was not click.  Customers often clicked on it because they thought they would be taken to another page.  The image actually supposed to be a video that ran in the background</li>
                 <img src = "image/blom_meadwork/blom_video_img.png" class = "blom-image" alt = "blom-image">
@@ -494,8 +551,22 @@
         <br>
        <div class = "copyright"> Designed and coded by Smrithi Srinivasan </div>
         
-    </footer>     
+    </footer> 
+
+
+  
+      
         
          
     </body>
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
 </html>
