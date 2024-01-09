@@ -78,173 +78,145 @@
 
 
 /* Navigation */
-.flex-container {
-    display: flex;
-    font-size: 20px;
-    margin: 10px;
-    padding: 0px, 20px;
-    align-content: center;
-    font-family: "Mukta", sans-serif;
-    text-align: bottom;
-   
-  }
-  
-/* Navigation- Home Icon */
-  .home-icon{
-    flex-grow: 10;
 
-  }
+nav{
 
-  .menu-item{
-
-    margin-right: 50px;
-    margin-top: 40px;
-    text-transform: capitalize;
-    
-  }
-  
-  .text-link-active{
-
-    text-decoration: dotted;
-    color:white;
-    background-color: rgb(92, 119, 236);
-  }
-
-  
-  @media only screen and (max-width: 700px) {
-    .text-link {
-      display: none;
-    }
-  }
-
-/* Background Image */
-
-
-
-/* Introduction Panel */
-
-.intro-panel{
- 
-  width: 100vh;
-  height: 100vh;
- 
-
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* text-align: center; */
-
-  margin: auto;
-  width: 50%;
-  font-family: "Mukta", "sans-serif";
-  color: white;
-
- 
+  display: block;
   
 }
 
-.banner-area{
+.span{
 
-  animation-name: animate;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
- 
+  font-size:40px;
+  border-radius:10px;
+  float: right;
+  padding: 20px;
+  cursor: pointer;
 }
 
-@keyframes animate {
+.logo{
 
-  0%{ background: black;}
-  50%{ background: #5271ff;}
-  100% {background: #800080;}
-  
+width: 120px;
+height: 120px;
 }
 
-.intro-text{
+/* CSS for Sliding Menu from W3 Schools */
 
+.overlay {
+  height: 100%;
+  width: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.7s;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 40%;
+  width: 100%;
   text-align: center;
- 
-  font-size: 45px;
-  font-family: "Mukta", "sans-serif";
+  margin-top: auto;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: skyblue;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+
+  text-decoration: underline black 3px;
+  color: skyblue;
+
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 55px;
+  font-size: 60px;
+}
+
+
+
+
+/* Intro banner image */
+
+.banner-image{
+
+  position: relative;
+  background: url(/image/home-page-banner.png) no-repeat center;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+}
+
+
+.banner-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Mukta", "Sans-serif";
+}
 
+.banner-container h1{
+
+  margin: 0;
+  font-size: 70px;
  
-  }
+}
 
 
-  .intro-subtext{
-   
-    font-family: "Mukta", "sans-serif";
-    text-align: center;
 
-  }
+.banner-container h1 span{
 
+
+padding: 6px 14px;
+display: inline-block;
+background-color: white;
+
+}
  
+.banner-details{
 
-  @media only screen and (max-width: 700px) {
+  margin: 20px;
+  display: block;
+  font-size: 26px;
+  background-color: white;
+}
 
-    .intro-panel{
- 
-      width: 100vh;
-      height: 100vh;
-     
-    
-     
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      /* text-align: center; */
-    
-      margin: auto;
-      width: 50%;
-      font-family: "Mukta", "sans-serif";
-      color: white;
+.banner-button{
 
-    
-     
-      
-    }
-
-    .banner-area{
-
-      animation-name: animate;
-      animation-duration: 7s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-     
-    }
-    
-    @keyframes animate {
-    
-      0%{ background: black;}
-      50%{ background: #5271ff;}
-      100% {background: #800080;}
-      
-    }
-    
-    
-    .intro-text{
-    
-      text-align: center;
-     
-      font-size: 45px;
-      font-family: "Mukta", "sans-serif";
-      text-align: center;
-    
-     
-      }
-    
-    
-      .intro-subtext{
-       
-        font-family: "Mukta", "sans-serif";
-        text-align: center;
-    
-      }
-  }
+  color: black;
+  padding: 10px 24px;
+  background: red;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.7s;
+  background-color: white;
+}
 
 
+.banner-button:hover{
+
+  opacity: 0.6;
+}
+
+  
 
 
 /* Projects */
@@ -262,21 +234,6 @@
 
 /* Projects */
 
-.design-title{
-
-  text-align: center;
-  margin-bottom: 80px;
-  font-family: "Mukta", "sans-serif";
-  /* font-size: 40px; */
-}
-
-.design-projects{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    
-}
 
 .card-container{
 
@@ -299,8 +256,9 @@
 
 .card-img{
 
-  width: 300px;
-  height: 300px;
+ object-fit: cover;
+ height: 300px;
+ width: 300px;
 }
 
 
@@ -449,6 +407,15 @@ margin-bottom: 40px;
 
   font-size: 20px;
   text-align: center;
+  font-family: 'Mukta', sans-serif;
+  line-height: 5vh;
+}
+
+.second-subheading{
+
+  font-size: 15px;
+  text-align: center;
+  font-style: oblique;
   font-family: 'Mukta', sans-serif;
   line-height: 5vh;
 }
@@ -1146,5 +1113,6 @@ background-color: white;}
   color: white;
   text-align: center;
  }
+
 
 
