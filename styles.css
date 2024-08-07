@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    height: 60px;
+    width: 90px;
+ 
+}
+.logo-picture{
+height: 60px;
+  
+}
+nav {
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-family: "Piazzolla", "sans-serif";
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: green;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: white;
+        padding: 20px;
+    }
+    .nav-individual-link:hover{
+
+        text-decoration: underline;
+        text-decoration-color: green;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* .banner-item:hover {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+} */
+
+/* Name-banner */
+
+/* .name-banner-hover-button {
+    padding: 15px 40px;
+    font-size: 2.5em;
+    font-family: Arial, sans-serif;
+    color: orange;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: pointer;
+  
+  } */
+
+
+
+
+  .name-banner-hover-button {
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-family: "Piazzolla", serif;
+}
+
+.name-banner-hover-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #a9bba9;
+    transition: width 0.3s ease;
+}
+
+.name-banner-hover-button:hover::after {
+    width: 50%;
+}
+
+.name-title{
+
+    font-family: "Piazzolla", "serif";
+    font-size:2rem;
+}
+
+
+
+.intro-subtitle{
+
+    font-size: 1rem;
+}
+
+
+
+.underline-effect::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+h1:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+/* Sliding banner text */
+
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+
+    position: relative;
+    height: 50px; /* Adjust as needed */
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    font-family: "Piazzolla", serif;
+    font-size: 18px;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+/* UX Case Study */
+
+.case-study-name{
+
+    font-family: "Piazzolla","serif";
+}
+.case-study-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.case-study-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+}
+
+.case-study-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.case-study-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.case-study-image-wrapper:hover .case-study-overlay {
+    opacity: 1;
+}
+
+.name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.summary {
+    margin: 10px 0;
+    padding: 0 20px;
+    font-family: "Piazzolla", "serif";
+}
+
+.tag {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Piazzolla", "serif";
+}
+
+
+
+@media (max-width: 600px) {
+    .name {
+        font-size: 1.2em;
+    }
+
+    .summary {
+        font-size: 0.9em;
+    }
+
+    .tag {
+        font-size: 0.8em;
+    }
+}
+
+
+
+/* Banner Container- Mobile */
+@media (max-width: 768px) {
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    .banner-item {
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+
+
+/* Footer Notes */
+footer {
+    background-color: white;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.footer-link {
+    display: inline-block;
+    margin: 0 10px;
+    color: black;
+    text-align: center;
+    font-family: "Piazzolla", "serif";
+    text-decoration: none;
+}
+
+
+/* About Page and UX Case Studies  */
+main {
+    padding: 2rem;
+}
+.about-active-link{
+
+    text-decoration-line: underline;
+    text-decoration-color: #a9bba9;
+}
+.about-page-title{
+    
+    text-align: center;
+    font-family: "Piazzolla", "serif";
+    font-size: 50px;
+
+}
+
+.about-section-title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: "Piazzolla", "serif";
+}
+.about-body-writing{
+
+    font-family: "Dosis", serif;
+    margin-bottom:0.5rem;
+}
+.about-image-caption{
+
+    font-family: "Dosis", serif;
+    size: 30px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.about-image{
+
+    border: 4px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* portfolio-template-page */
+.portfolio-project-brief{
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Dosis", serif;
+}
+.prototype-link{
+    font-family: "Dosis", serif;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: normal;
+
+}
+.centered-list li {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.li-items {
+    text-decoration: none;
+    
+    font-weight: normal;
+    display: inline-block;
+    font-family: "Dosis","serif";
+}
+
+.diagram-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.shapes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    position: relative;
+}
+.shape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.circle, .square, .triangle {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    border: 2px solid #000;
+    margin: 0 20px;
+    position: relative;
+    font-family: "Dosis", "serif";
+}
+.circle {
+    border-radius: 50%;
+}
+
+.info {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Dosis", "serif";
+}
+
+.line-horizontal {
+    position: absolute;
+    top: 50px; /* Center vertically with respect to shapes */
+    width: 60%;
+    height: 2px;
+    background: #000;
+    z-index: -1;
+}
+
+/* blom-research-info */
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: "Dosis", "serif";
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+    
+}
